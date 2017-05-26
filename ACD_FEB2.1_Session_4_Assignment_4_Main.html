@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Animation with CSS</title>
+        <style> 
+            /*-- Linear gradient --*/
+            .divOne {
+                width: 100px;
+                height: 100px;
+                background: green;
+                border-radius:0%;
+                text-align:center;
+                line-height: 100px;
+                margin-left:20%;
+                margin-right:0%;
+                display: inline-block;
+                border-radius: 20%; 
+                background: linear-gradient(to right, red , green); /* Standard syntax (must be last) */  
+            }
+            /*-- Circular gradient --*/
+            .divTwo {
+                width: 100px;
+                height: 100px;
+                background: green;
+                border-radius:0%;
+                text-align:center;
+                line-height: 100px;
+                margin-left:10%;
+                margin-right:0%;
+                display: inline-block;
+                border-radius: 20%; 
+                background: radial-gradient(farthest-side at 50% 15%, red, yellow, green);
+            }
+            /*-- Eclipse gradient --*/
+            .divThree {
+                width: 100px;
+                height: 100px;
+                background: green;
+                border-radius:0%;
+                text-align:center;
+                line-height: 100px;
+                margin-left:10%;
+                margin-right:0%;
+                display: inline-block;
+                border-radius: 20%; 
+                background: radial-gradient(farthest-corner at 50% -45%, red, yellow, green);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="divOne">Box 1</div>
+        <div class="divTwo">Box 2</div>
+        <div class="divThree">Box 3</div>
+    </body>
+</html>
+
